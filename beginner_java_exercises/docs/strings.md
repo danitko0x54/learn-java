@@ -58,7 +58,8 @@ public class Strings {
 
         // Format
         var age = 37;
-        System.out.println(String.format("Hola, %s. Tengo %d.", name, age));
+        System.out.println(String.format("Hola, %s. Tengo %d.", name, age)); // crea una cadena y la imprime
+        System.out.printf("Hola, %s. Tengo %d.", name, age); // hace lo mismo que la anterior pero no necesitamos crear la cadena, solo imprime sin crear dato
     }
 }
 
