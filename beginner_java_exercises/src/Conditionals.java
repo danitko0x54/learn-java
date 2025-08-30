@@ -39,9 +39,9 @@ public class Conditionals {
 
         var numPosNeg = -6;
 
-        if (numPosNeg < 0)  {
+        if (numPosNeg < 0) {
             System.out.printf("El número %d es negativo\n", numPosNeg);
-        } else if (numPosNeg > 0){
+        } else if (numPosNeg > 0) {
             System.out.printf("El número %d es positivo\n", numPosNeg);
         } else {
             System.out.println("El número es 0");
@@ -49,7 +49,7 @@ public class Conditionals {
 
         // 4. Crea un programa que diga si un número es par o impar.
 
-        var isEven =  7;
+        var isEven = 7;
 
         System.out.println("Ejercicio 4 \n============================");
 
@@ -114,7 +114,7 @@ public class Conditionals {
 
         if (qualification < 50) {
             System.out.println("Suspenso");
-        } else if (qualification < 90){
+        } else if (qualification < 90) {
             System.out.println("Aprobado");
         } else {
             System.out.println("Sobresaliente");
@@ -147,15 +147,25 @@ public class Conditionals {
         } else {
             System.out.printf("La letra %s es una consonante \n", letter);
         }
-
+        // Podría ser incompleta porque no usa el tipo adecuado de dato (char), no tiene en cuenta el caso que sean opciones no letra
          */
 
-        var letter = 'a';
-        
+        char letter = '8';
+        System.out.println("Letra " + letter);
 
+        // Conversión a minúscula para la comparación
+        char lowerLetter = Character.toLowerCase(letter);
 
-
-
+        // Usa verificación de las vocales y si no comprueba que sea una letra
+        // El método .isLetter, es estático propio del objeto Character no de las variables
+        if (lowerLetter == 'a' || lowerLetter == 'e' || lowerLetter == 'i' || lowerLetter == 'o' ||
+                lowerLetter == 'u') {
+            System.out.println("La letra '" + lowerLetter + "' es una vocal.");
+        } else if (Character.isLetter(lowerLetter)) {
+            System.out.println("La letra '" + lowerLetter + "' es una consonante.");
+        } else {
+            System.out.println("'" + lowerLetter + "' no es una letra.");
+        }
 
 
         // 10. Usa tres variables a, b, c y muestra cuÃ¡l es el mayor de las tres.
@@ -171,15 +181,12 @@ public class Conditionals {
         } else {
             if (a > b && a > c) {
                 System.out.println("A es el más grande");
-            } else if (a < b && b > c){
+            } else if (a < b && b > c) {
                 System.out.println("B es el más grande");
             } else {
                 System.out.println("C es el más grande");
             }
         }
-
-
-
 
 
     }
