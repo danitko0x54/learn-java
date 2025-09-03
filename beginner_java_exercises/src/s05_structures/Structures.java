@@ -1,3 +1,5 @@
+package s05_structures;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

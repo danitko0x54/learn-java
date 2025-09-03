@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package s04_conditionals;
 
 public class Conditionals {
 

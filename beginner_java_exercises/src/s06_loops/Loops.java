@@ -1,3 +1,5 @@
+package s06_loops;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

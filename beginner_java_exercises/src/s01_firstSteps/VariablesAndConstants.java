@@ -1,3 +1,5 @@
+package s01_firstSteps;
+
 public class VariablesAndConstants {
     public static void main(String[] args) {
         // 1. Declara una variable de tipo String y asígnale tu nombre.
