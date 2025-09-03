@@ -1,3 +1,5 @@
+package s01_firstSteps;
+
 public class FirstSteps {
 
     public static void main(String[] args) {
